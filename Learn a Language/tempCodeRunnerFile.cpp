@@ -1,0 +1,5 @@
+while (count)
+        // {
+        //     space+=" ";
+        //     --count;
+        // }
