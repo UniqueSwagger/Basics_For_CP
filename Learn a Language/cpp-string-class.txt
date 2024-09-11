@@ -1,0 +1,67 @@
+#include <string>
+
+1. find()-->Find a substring in the string. 
+Find first occurrence from start.
+
+2. rfind()-->Find the last occurrence of a substring in the string.
+Find last occurrence from last.
+
+3. append()-->Append to the string. append in the last.
+
+4. insert()-->Insert into the string.
+insert string at given index. 
+str.insert(13,"beautiful") means will insert beautiful at index 13.
+
+5. erase()-->Erase characters from the string.
+erase n characters from the given position.
+str.erase(7,5) means will erase 5 characters starting from the 7th index.
+
+6. replace()-->Replace portions of the string.
+replace n characters within a string.
+str.replace(6,2,"Earth") means will replace 2 characters by Earth from 6th index.
+
+6. compare()-->Compare two strings.
+str1.compares(str2)
+returns 0 if both strings are equal
+returns pos number if str1 is longer
+returns neg number if str1 is smaller
+
+7. to_string()-->int to string 
+8. stoi()-->string to int
+9. atoi()-->char array to int
+
+10. cpp int to string using stringstream
+
+#include<sstream>
+int num = 15;
+
+// creating stringstream object ss
+stringstream ss;
+
+// assigning the value of num to ss
+ss << num;
+
+// initializing string variable with the value of ss
+// and converting it to string format with str() function
+string strNum = ss.str();
+cout << strNum;
+
+
+11. Important
+
+The line if (str1.find(str2) != string::npos) checks 
+if the variable first_occurrence=str1.find(str2) contains a valid position 
+where the substring was found within the string.
+
+If substring is found in string, 
+first_occurrence will be set to the position of its first occurrence.
+If world is not found, 
+it will be set to a special constant value string::npos, 
+which indicates that the substring was not found in the string.
+
+Note: std::string::npos is a constant that 
+holds the largest possible value of size_t type ( 18446744073709551615 on 64-bit systems ), 
+which is an unsigned integer type. 
+Hence, -1 corresponds to the actual value of std::string::npos.
+
+npos means no position found
